@@ -14,11 +14,16 @@ header {
   padding: 20px 0;
   margin: 0 auto 20px auto;
   width: 1000px;
-  overflow: auto
+  overflow: auto;
+  display: flex;
+}
+
+header .headings {
+  flex-grow: 1;
+  text-align: right;
 }
 
 header .heading {
-  float: right;
   font-size: 50px;
   font-weight: 100;
   text-transform: uppercase;
@@ -28,15 +33,12 @@ header .heading {
 header .subheading {
   font-size: 20px;
   font-weight: 400;
-  float: right;
-  clear: right;
   text-transform: uppercase;
   margin: 0;
 }
 
 header .logo {
   width: 100px;
-  float: left;
 }
 
 .img-showcase {
@@ -93,23 +95,22 @@ header .logo {
   header {
     width: 100%;
     text-align: center;
+    flex-direction: column;
   }
 
   header .logo {
-    display: block;
     margin: 0 auto;
     width: 80px;
     margin-bottom: 20px;
-    float: none;
   }
 
   header .heading {
     font-size: 40px;
-    float: none;
+    text-align: center;
   }
 
   header .subheading {
-    float: none;
+    text-align: center;
   }
 
   .featuredWork {
